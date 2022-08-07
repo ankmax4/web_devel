@@ -1,0 +1,82 @@
+.container{
+    background-color: #e5e5fd;
+    min-height: 100vh;
+    border: 10px solid #1d1e4c;
+}
+
+/* The min-height property defines the minimum height of an element. */
+/* height: 100vh = 100% of the viewport height. height: 100% = 100% of the parent's element height.  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* When you have specified a width on the object that you have applied margin: 0 auto to, the object will sit centrally within it's parent container.
+
+Specifying auto as the second parameter basically tells the browser to automatically determine the left and right margins itself, which it does by setting them equally. It guarantees that the left and right margins will be set to the same size. The first parameter 0 indicates that the top and bottom margins will both be set to 0.
+
+margin-top: 0;
+margin-bottom: 0;
+margin-left: auto;
+margin-right: auto; */
+
+.content{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.image_container,img{
+    width: 300px;
+    height: 320px;
+    border-radius: 50%;
+}
+/* flex will shift other div elements to left  */
+.top_section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: flex-end;
+}
+
+.top_section h1{
+    font-size: 60px;
+    font-weight: bold;
+    
+}
+
+.top_section h4 {
+    text-align: end;
+}
+
+.about_section{
+    margin-top: 50px;
+}
+
+.about_section h2{
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.about_section p{
+    font-size: 20 px;
+    line-height:  30px;
+    letter-spacing: 1.2px;
+    /* word-break: break-all; */
+}
+
+.bio_section{
+    margin-top: 50px;
+}
+.bio_section h3 {
+    margin-bottom: 20px;
+}
+
+.bio_section ul {
+    margin-bottom: 50px;
+    margin-left: 30 px;
+}
+li{
+ margin-bottom: 10px;
+ margin-left: 30 px;    
+}
